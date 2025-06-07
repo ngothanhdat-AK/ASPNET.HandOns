@@ -1,0 +1,6 @@
+@ASPNET.HandOns_HostAddress = http://localhost:5062
+
+GET {{ASPNET.HandOns_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
