@@ -14,6 +14,10 @@ namespace Repositories.Entity
         public string Name { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
         public DateTime CreatedAt { get; set; } = DateTime.Now;
+        //Foreign key
+        public int CategoryId { get; set; }
+        //Navigation property
+        public Category? Category { get; set; }
 
     }
 }

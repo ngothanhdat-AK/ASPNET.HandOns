@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using Repositories.Data;
 
 
@@ -142,6 +143,8 @@ namespace Repositories.Base
             return entity;
 
         }
+
+        
 
     }
 }

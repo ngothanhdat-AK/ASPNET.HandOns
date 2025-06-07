@@ -1,3 +1,7 @@
+﻿
+using Repositories;
+using Repositories.Data;
+using Services;
 
 namespace ASPNET.HandOns
 {
@@ -8,13 +12,20 @@ namespace ASPNET.HandOns
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            // Để sài Dependency Injection, cần phải thêm các service vào container
+            builder.Services.AddScoped<ProductService>();
+            builder.Services.AddScoped<ProductRepository>();
+            builder.Services.AddScoped<CategoryService>();
+            builder.Services.AddScoped<CategoryRepository>();
+            builder.Services.AddScoped<ApplicationDbContext>();
+
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new() { Title = "Seminar .NET", Version = "v1" });
+                c.SwaggerDoc("v1", new() { Title = "ASP.NET Basic", Version = "v1" });
                 var xmlFile = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 if (File.Exists(xmlPath))
