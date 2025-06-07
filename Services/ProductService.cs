@@ -80,5 +80,11 @@ namespace Services
             if (product == null) return null;
             return ProductMapper.MapToProductResponseDto(product);
         }
-    }
+
+        public async Task<IEnumerable<ProductResponse.ProductResponseDto>> GetAllProductResponsesAsync()
+        {
+            var products = await GetAllProductsAsync();
+            return products.Select(ProductMapper.MapToProductResponseDto);
+        }
+    } 
 }
