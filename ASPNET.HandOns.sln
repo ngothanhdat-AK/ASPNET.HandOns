@@ -5,6 +5,10 @@ VisualStudioVersion = 17.13.35931.197 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNET.HandOns", "ASPNET.HandOns\ASPNET.HandOns.csproj", "{EDC03752-8A04-4C28-B4A0-ECE4930C091E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "Repositories\Repositories.csproj", "{C09A80AB-D9DB-4ABC-819A-40A108A1B0F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{07F038F4-A305-4F18-8F03-A995AA3E9845}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{EDC03752-8A04-4C28-B4A0-ECE4930C091E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDC03752-8A04-4C28-B4A0-ECE4930C091E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDC03752-8A04-4C28-B4A0-ECE4930C091E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C09A80AB-D9DB-4ABC-819A-40A108A1B0F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C09A80AB-D9DB-4ABC-819A-40A108A1B0F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C09A80AB-D9DB-4ABC-819A-40A108A1B0F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C09A80AB-D9DB-4ABC-819A-40A108A1B0F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07F038F4-A305-4F18-8F03-A995AA3E9845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07F038F4-A305-4F18-8F03-A995AA3E9845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07F038F4-A305-4F18-8F03-A995AA3E9845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07F038F4-A305-4F18-8F03-A995AA3E9845}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
